@@ -25,7 +25,7 @@
     }
 
     .#{$steam-header-titlebar-actions} {
-      @apply mt-0 mr-3;
+      @apply mr-3 mt-0;
 
       .tool-tip-source {
         .#{$steam-header-titlebar-actions-button} {
@@ -89,4 +89,9 @@
       }
     }
   }
+}
+
+.#{$steam-urlbar} {
+  background-color: var(--color-elaina-background-base) !important;
+  padding: 4px 8px 8px 12px !important;
 }
