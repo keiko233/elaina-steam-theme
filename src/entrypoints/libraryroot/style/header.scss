@@ -1,0 +1,92 @@
+.#{$steam-header} {
+  background-color: var(--color-elaina-background-base);
+
+  .#{$steam-header-titlebar} {
+    @apply h-10 pt-0.5;
+    background-color: var(--color-elaina-background-lighter);
+
+    .#{$steam-header-titlebar-menu} {
+      @apply mt-0 gap-0;
+
+      .#{$steam-header-titlebar-menu-button} {
+        @apply p-0;
+
+        > div:nth-child(1) {
+          @apply rounded-full px-2 py-1;
+          color: var(--color-elaina-text);
+          font-size: 14px;
+          font-weight: 600;
+
+          &:hover {
+            background-color: var(--color-elaina-background-base);
+          }
+        }
+      }
+    }
+
+    .#{$steam-header-titlebar-actions} {
+      @apply mt-0 mr-3;
+
+      .tool-tip-source {
+        .#{$steam-header-titlebar-actions-button} {
+          @apply rounded-full;
+        }
+
+        .#{$steam-header-titlebar-actions-user} {
+          @apply relative h-6 rounded-full;
+          padding-left: 36px;
+          background-color: var(--color-elaina-background-base);
+
+          .#{$steam-header-titlebar-actions-user-avatar} {
+            @apply absolute -left-1 -top-1.5 size-9 overflow-clip rounded-full;
+            background-color: var(--color-elaina-background-darker);
+
+            .#{$steam-header-titlebar-actions-user-avatar-status} {
+              @apply static w-full;
+            }
+
+            img.avatar {
+              @apply absolute left-0.5 top-0.5 rounded-full;
+              width: 31px;
+              height: 31px;
+            }
+          }
+        }
+
+        .#{$steam-header-titlebar-actions-button-bigscreen} {
+          @apply rounded-full;
+
+          &:hover {
+            background-color: var(--color-elaina-background-base);
+          }
+
+          svg {
+            top: 14px;
+            color: var(--color-elaina-text) !important;
+          }
+        }
+      }
+    }
+
+    .#{$steam-header-titlebar-controls} {
+      .title-bar-actions.window-controls {
+        @apply pr-2 pt-1;
+
+        .title-area-icon {
+          @apply rounded-full;
+
+          &:hover {
+            background-color: var(--color-elaina-background-base);
+          }
+
+          svg,
+          line {
+            fill: var(--color-elaina-text) !important;
+            color: var(--color-elaina-text) !important;
+            stroke: var(--color-elaina-text) !important;
+          }
+        }
+      }
+    }
+  }
+}
