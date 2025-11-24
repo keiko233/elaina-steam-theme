@@ -1,0 +1,16 @@
+@import "../../../assets/global.css";
+@import "./define.scss";
+
+.#{$steam-header} {
+  .#{$steam-header-titlebar} {
+    .#{$steam-header-titlebar-controls} {
+      .title-bar-actions.window-controls {
+        @apply pr-1.5 pt-1.5;
+
+        .title-area-icon {
+          @apply rounded-full;
+        }
+      }
+    }
+  }
+}
