@@ -1,0 +1,21 @@
+.#{$steam-footer} {
+  background-color: var(--color-elaina-background-base);
+
+  .#{$steam-footer-left-text},
+  .#{$steam-footer-center-text},
+  .#{$steam-footer-right-text} {
+    color: var(--color-elaina-text);
+    opacity: 0.9;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .#{$steam-footer-left},
+  .#{$steam-footer-center},
+  .#{$steam-footer-right} {
+    svg {
+      color: var(--color-elaina-text);
+      opacity: 0.9;
+    }
+  }
+}
