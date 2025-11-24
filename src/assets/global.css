@@ -2,3 +2,30 @@
 /* to avoid affecting Steam's original styles */
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  /* --color-elaina-mix-base: white; */
+  --color-elaina-mix-base: black;
+
+  --color-elaina: #ec4899;
+
+  --color-elaina-text: rgb(
+    from var(--color-elaina-mix-base) calc(255 - r) calc(255 - g) calc(255 - b)
+  );
+
+  --color-elaina-background-darker: color-mix(
+    in srgb,
+    var(--color-elaina) 10%,
+    var(--color-elaina-mix-base)
+  );
+  --color-elaina-background-base: color-mix(
+    in srgb,
+    var(--color-elaina) 30%,
+    var(--color-elaina-mix-base)
+  );
+  --color-elaina-background-lighter: color-mix(
+    in srgb,
+    var(--color-elaina) 50%,
+    var(--color-elaina-mix-base)
+  );
+}
