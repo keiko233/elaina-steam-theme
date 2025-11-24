@@ -1,0 +1,18 @@
+{
+  "name": "Elaina Theme",
+  "author": "keiko233",
+  "description": "Elaina Theme for SteamClientHomebrew",
+  "github": {
+    "owner": "keiko233",
+    "repo_name": "elaina-steam-theme"
+  },
+  "header_image": "https://i.imgur.com/image_here.png",
+  "splash_image": "https://i.imgur.com/image_here.png",
+  "tags": [
+    "Example",
+    "Template"
+  ],
+  "version": "1.0.0",
+  "Steam-WebKit": "webkit.css",
+  "UseDefaultPatches": true
+}

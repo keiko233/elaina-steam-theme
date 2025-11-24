@@ -1,0 +1,4 @@
+/* Note: Tailwind's preflight (base styles) is disabled in tailwind.config.js */
+/* to avoid affecting Steam's original styles */
+@tailwind components;
+@tailwind utilities;
