@@ -12,6 +12,16 @@
   --color-elaina-text: rgb(
     from var(--color-elaina-mix-base) calc(255 - r) calc(255 - g) calc(255 - b)
   );
+  --color-elaina-text-darker: color-mix(
+    in srgb,
+    var(--color-elaina-text) 60%,
+    var(--color-elaina-mix-base)
+  );
+  --color-elaina-text-lighter: color-mix(
+    in srgb,
+    var(--color-elaina-text) 80%,
+    var(--color-elaina-mix-base)
+  );
 
   --color-elaina-background-darker: color-mix(
     in srgb,

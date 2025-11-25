@@ -1,3 +1,7 @@
+.#{$steam-container} {
+  background-color: var(--color-elaina-background-base) !important;
+}
+
 .#{$steam-header} {
   background-color: var(--color-elaina-background-base);
 
@@ -89,9 +93,88 @@
       }
     }
   }
+
+  .#{$steam-header-navbar} {
+    @apply p-2 pb-0;
+    height: 44px !important;
+
+    .#{$steam-header-navbar-inner} {
+      @apply flex items-center gap-0 rounded-full p-2;
+      background-color: var(--color-elaina-background-lighter);
+      height: calc(100% - 16px);
+
+      .#{$steam-header-navbar-browser-location-button} {
+        @apply mr-2 rounded-full p-1.5;
+        color: var(--color-elaina-text-darker);
+        background-color: var(--color-elaina-background-base);
+        opacity: 0.8;
+
+        &.#{$steam-header-navbar-browser-location-button-active} {
+          color: var(--color-elaina-text);
+          opacity: 1;
+        }
+      }
+
+      .#{$steam-header-navbar-browser-tab-button} {
+        @apply h-7 p-0;
+        background-color: var(--color-elaina-background-base);
+
+        &:first-of-type {
+          @apply rounded-l-full;
+
+          .#{$steam-header-navbar-browser-tab-button-text} {
+            @apply pl-4;
+          }
+        }
+
+        &:last-of-type {
+          @apply rounded-r-full;
+
+          .#{$steam-header-navbar-browser-tab-button-text} {
+            @apply pr-4;
+          }
+        }
+
+        &:hover {
+          @apply shadow-lg;
+          background-color: var(--color-elaina-text);
+          opacity: 0.8;
+
+          .#{$steam-header-navbar-browser-tab-button-text} {
+            color: var(--color-elaina);
+          }
+        }
+
+        .#{$steam-header-navbar-browser-tab-button-text} {
+          @apply px-3 py-1 text-base font-bold leading-5;
+          color: var(--color-elaina-text);
+
+          &::after {
+            content: none;
+          }
+        }
+      }
+
+      .#{$steam-header-navbar-browser-tab-button-active} {
+        background-color: var(--color-elaina-text);
+
+        .#{$steam-header-navbar-browser-tab-button-text} {
+          @apply shadow-none;
+          color: var(--color-elaina);
+        }
+      }
+    }
+  }
 }
 
-.#{$steam-urlbar} {
+.#{$steam-browser-container} {
   background-color: var(--color-elaina-background-base) !important;
-  padding: 4px 8px 8px 12px !important;
+
+  .#{$steam-browser-urlbar} {
+    @apply rounded-full;
+    background-color: var(--color-elaina-background-lighter) !important;
+    margin: 6px 8px 8px 8px !important;
+    padding: 8px !important;
+    box-shadow: none !important;
+  }
 }
