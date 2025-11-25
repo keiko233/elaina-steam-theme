@@ -1,0 +1,33 @@
+.#{$steam-libaray-container} {
+  .#{$steam-libaray-separator} {
+    @apply hidden;
+  }
+
+  .#{$steam-libaray-left-container} {
+    @apply p-2 pr-1;
+    background-color: var(--color-elaina-background-base) !important;
+
+    .#{$steam-libaray-left-content} {
+      @apply overflow-clip rounded-lg;
+      background-color: var(--color-elaina-background-lighter) !important;
+    }
+  }
+
+  .#{$steam-libaray-resize-handle} {
+    background-color: var(--color-elaina-background-base) !important;
+
+    &:hover {
+      background-color: var(--color-elaina-background-lighter) !important;
+    }
+  }
+
+  .#{$steam-libaray-right-container} {
+    @apply p-2 pl-1;
+    background-color: var(--color-elaina-background-base) !important;
+
+    .#{$steam-libaray-right-content} {
+      @apply overflow-clip rounded-lg;
+      background-color: var(--color-elaina-background-lighter) !important;
+    }
+  }
+}
